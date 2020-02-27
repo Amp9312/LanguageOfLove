@@ -192,14 +192,14 @@ menu:
  "No idea, could you show me the way?":
   jump no_idea
  "Yes i do actually, but i'd love it if you walked me anyways":
-  jump yes
+  jump yes2
 
 label no_idea:
 s "well you haven't gotten on my nerves yet, so i suppose i could. This way,"
 "Cassanda walks you to class"
 jump finished
 
-label yes:
+label yes2:
 s "hahaha, you’re something else. Sure, why not."
 "Cassandra happily walks you to class"
 
@@ -360,8 +360,6 @@ label yes:
  "C# walks away with a bad taste in her mouth"
  jump finished
  
- label finished:
-  "End of Act One"
 
 label no:
  "Exactly, so maybe don' go criticizing my hair when yours looks like a nest."
