@@ -1,5 +1,5 @@
 ##dialogue names
-define s = Character('unknown lady', color="#c8ffc8")
+define s = Character('Cassandra', color="#c8ffc8")
 define m = Character('Me', color="#c8c8ff")
 
 ##START OF GAME
@@ -32,7 +32,7 @@ menu:
   scene wallpaper_funky_statue
   with dissolve
   jump cafe
-##this is the c#/scratch route
+##this is the csharp/scratch route
  "Stand around the class building":
   scene wallpaper_stairs
   with dissolve
@@ -42,23 +42,14 @@ menu:
 label wander:
 
 
- "You wander the campus with no direction, and find yourself in front of two girls. One with very vibrant blue hair but a stern posture, and another with royal purple hair that is operating more meekly. They are both looking at you."
+ "You wander the campus with no direction, and find yourself in front of two girls. One with very vibrant blue hair but a stern posture, and another with dark blue hair that is operating more meekly. They are both looking at you."
  "Which one do you talk to?"
-
- show cppneutral
- "You wander the campus with no direction, and find yourself in front of two girls. One with very vibrant blue hair but a stern posture, and another with royal purple hair that is operating more meekly."
-  
-
-label library:
- "Finding the library not so far away, you go in to find that all the tables have been taken. You ask a very sharply dressed young woman in a lab coat if you could sit with her and her friend. She accepts."  
-  
-label cafe:
- "Feeling drowsy you decide caffeine is the best idea right now. Making your way towards the cafe. But on your way, you bump into a very stressed looking young red head who immediately apologizes, despite the entire incident being your fault anyways." 
-  
-label standing:
- "You decide to stick around a campus building, see who comes out of class when the bell rings. After about five minutes and 9 rings of the bell, you see a gothy looking girl complaining away, eating a lollipop. A disinterested but listening younger"
- "looking girl with a cat ear headband is following her."
- "Which one do you approach?"
+ 
+menu:
+ "Vibrant blue hair":
+  jump cppchoose
+ "Dark Blue hair":
+   jump luachoose
 
 ##c++ path
 label cppchoose:
@@ -70,7 +61,7 @@ menu:
   jump obvious
  "Yeah, I have no idea where I'm going":
   jump lost
- "*Ignore here, keep walking past*":
+ "*Ignore her, keep walking past*":
   jump ignore
 
 #conversation A
